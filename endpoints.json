@@ -2,28 +2,24 @@
     "endpoints": [
         {
             "path": "/",
-            "methods": [ "get" ],
-            "handler": "/routes"
+            "methods": [
+                "get"
+            ],
+            "handler": "/handlers/root"
         },
         {
-            "path": "/api/:version/:model/:identifier",
-            "methods": [ "get", "put", "post", "delete" ],
-            "handler": "/routes/api"
+            "path": "/sales",
+            "methods": [
+                "get"
+            ],
+            "handler": "/handlers/sales"
         },
         {
-            "path": "/api/:version/:model",
-            "methods": [ "get", "put", "post", "delete" ],
-            "handler": "/routes/api"
-        },
-        {
-            "path": "/endpoint",
-            "methods": [ "post" ],
-            "handler": "/routes/endpoint"
-        },
-        {
-            "path": "/biddable",
-            "methods": [ "post" ],
-            "handler": "/routes/biddable"
+            "path": "/sale",
+            "methods": [
+                "post"
+            ],
+            "handler": "/handlers/sale"
         }
     ]
 }

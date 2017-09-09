@@ -1,18 +1,18 @@
 {
   "name": "Tyrion-API",
-  "version": "0.0.8",
-  "description": "Tyrion API",
-  "main": "app.js",
-  "dependencies": {
-    "ezbake": "0.0.8",
-    "grifter-js": "git+ssh://git@bitbucket.org:industrialrd/grifter-js.git",
-    "mongoose": "^4.4.16",
-    "underscore": "^1.8.3"
-  },
-  "devDependencies": {},
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
   "scripts": {
-    "start": "node app"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Cooper Smith",
-  "license": "Private"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "ezbake": "0.0.1",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.10"
+  }
 }
