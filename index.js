@@ -1,5 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+// This is wehre the EZBake Service itself is created using Express
+//  - set
 var Server = require('./server');
 
 var EZBake = function(){
@@ -22,15 +24,18 @@ var EZBake = function(){
   }
 
   self.loadEndpoints = function(endpoints){
-    // console.log("EZBake: gathering ingredients");
+    console.log("EZBake: gathering ingredients");
+  // create express app
     app = module.exports = express();
-    
+  
+  //set up bodyParser for POSTing
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));    
-    
 
+    // set up enviroment and routing
     require('./environment.js')(self, app, express);
     require('./routing.js')(app,endpoints, users);
+    
     console.log("EZBake: mixed ingredients. ready to bake.");
   }
 }
