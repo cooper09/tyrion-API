@@ -2,13 +2,12 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-var saleSchema = new Schema ({
-    category: String,
+var trackingSchema = new Schema ({
     source: String,
     description: String,
     timestamp: String
 });
 
-var Sale = mongoose.model('Sale', saleSchema );
+var Tracking = mongoose.model('Tracking', trackingSchema );
 
-module.exports = Sale;
+module.exports = Tracking;

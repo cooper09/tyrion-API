@@ -20,6 +20,14 @@
                 "post"
             ],
             "handler": "/handlers/sale"
+        },
+        {
+            "path": "/tracks",
+            "methods": [
+                "get"
+            ],
+            "handler": "/handlers/tracks"
         }
+       
     ]
 }

@@ -1,8 +1,9 @@
-var Sale = require("../schemas").Sale;
+
+var Tracking = require("../schemas").Tracking;
 
 module.exports = function(req, res){
   var yourname = req.params.yourname;
-  Sale.find({}, function(err, docs) {
+  Tracking.find({}, function(err, docs) {
     console.log("yumpin yimminy!");
     res.json(docs);
  }); 
